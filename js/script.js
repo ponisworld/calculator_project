@@ -38,7 +38,7 @@ function handleSymbol(symbol) {
         case '+':
         case '-':
         case '×':
-        case '+':
+        case '÷':
             handleMath(symbol);
             break;
 
@@ -85,7 +85,7 @@ function flushOperation(intBuffer) {
         case '×':
             runningTotal *= intBuffer;
             break;
-        case '+':
+        case '÷':
             runningTotal /= intBuffer;
             break;
     }
